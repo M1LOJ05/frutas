@@ -31,7 +31,7 @@ f = os.popen(cmd)
 output = f.read()
 version = str(output).replace('\n','').replace('$version="v','').replace('";','')
 
-url = urllib2.urlopen("https://raw.githubusercontent.com/M1LOJ05/frutas/master/modulos_frutas.xml?token=AMA3OAB2BMXMWKOVLXHKBR242P25M")
+url = urllib2.urlopen("https://raw.githubusercontent.com/M1LOJ05/frutas/master/modulos_frutas.xml")
 dom = parse( url )
 
 for modules in dom.getElementsByTagName('module'):
